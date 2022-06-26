@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wheather_app_flutter/constants/asset_constants.dart';
+import 'package:wheather_app_flutter/screens/city_selection.dart';
 import 'package:wheather_app_flutter/shared/style.dart';
 import 'package:wheather_app_flutter/widgets/current_location_btn.dart';
 
@@ -47,7 +48,12 @@ class LandingPage extends StatelessWidget {
           SizedBox(
             height: 22,
           ),
-          SelectCityBtn(),
+          GestureDetector(
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => CitySelection()));
+              },
+              child: SelectCityBtn()),
           SizedBox(
             height: 10,
           ),
