@@ -34,7 +34,7 @@ class CurrentLocationBtn extends StatelessWidget {
             child: Container(
                 width: 14,
                 height: 17,
-                child: Image(image: AssetImage(AssetConstants.backArrowIcon))),
+                child: Image(image: AssetImage(AssetConstants.fwdArrowIcon))),
           ),
         ],
       ),
