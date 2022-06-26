@@ -39,7 +39,26 @@ TextStyle heading4 = GoogleFonts.poppins(
   color: appBlackColor,
 ) as TextStyle;
 
+TextStyle heading5 = GoogleFonts.poppins(
+  fontSize: 99,
+  fontWeight: FontWeight.w700,
+  letterSpacing: 20 * (30.5 / 100),
+  color: appWhiteColor,
+) as TextStyle;
+
 TextStyle heading6 = GoogleFonts.poppins(
   fontSize: 20,
   color: appBlackColor,
+) as TextStyle;
+
+TextStyle heading7 = GoogleFonts.poppins(
+  fontSize: 22,
+  fontWeight: FontWeight.w400,
+  color: appWhiteColor,
+) as TextStyle;
+
+TextStyle heading8 = GoogleFonts.poppins(
+  fontSize: 15,
+  fontWeight: FontWeight.w400,
+  color: appTextGreyColor,
 ) as TextStyle;
