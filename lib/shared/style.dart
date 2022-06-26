@@ -6,8 +6,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 // App Colors
 const Color appGreenColor = Color(0xFF6CC51D);
+const Color appTextGreyColor = Color(0xFFBFBFBF);
 const Color appGreyColor = Color(0xFFE0E0E0);
-const Color appWhiteColor = Color(0xFFF4F5F9);
+const Color appLightGreyColor = Color(0xFFF7F7F7);
+const Color appWhiteColor = Color(0xFFFFFFFF);
 const Color appBlueColor = Color(0xFF6DC9EF);
 const Color appGreyDark = Color(0xFFB1B1B1);
 const Color appBlackColor = Color(0xFF000000);
@@ -21,6 +23,12 @@ TextStyle heading1 = GoogleFonts.poppins(
 
 TextStyle heading2 = GoogleFonts.poppins(
   fontSize: 57,
+  fontWeight: FontWeight.w600,
+  color: appBlackColor,
+) as TextStyle;
+
+TextStyle heading3 = GoogleFonts.poppins(
+  fontSize: 30,
   fontWeight: FontWeight.w600,
   color: appBlackColor,
 ) as TextStyle;
