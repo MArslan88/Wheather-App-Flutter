@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:wheather_app_flutter/screens/city_selection.dart';
+import 'package:wheather_app_flutter/screens/home.dart';
+import 'package:wheather_app_flutter/screens/landing_page.dart';
 import 'package:wheather_app_flutter/screens/splash.dart';
 
 void main() {

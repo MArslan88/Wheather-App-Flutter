@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wheather_app_flutter/constants/asset_constants.dart';
+import 'package:wheather_app_flutter/screens/home.dart';
 import 'package:wheather_app_flutter/shared/style.dart';
 
 import '../widgets/city_name_edit_field.dart';
@@ -26,7 +27,11 @@ class _CitySelectionState extends State<CitySelection> {
             child: Container(
               width: 14,
               height: 17,
-              child: Image.asset(AssetConstants.backIcon),
+              child: GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Image.asset(AssetConstants.backIcon)),
             ),
           ),
           Padding(
@@ -40,7 +45,12 @@ class _CitySelectionState extends State<CitySelection> {
           SizedBox(
             height: 22,
           ),
-          CityName(placeholder: "Karachi, Pakistan"),
+          GestureDetector(
+              onTap: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => Home()));
+              },
+              child: CityName(placeholder: "Karachi, Pakistan")),
           SizedBox(height: 10),
           CityName(placeholder: "Sydney, Australia"),
           SizedBox(height: 10),
