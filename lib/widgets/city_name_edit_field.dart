@@ -15,7 +15,7 @@ class CityNameEditText extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
-              color: appWhiteColor.withOpacity(0.25),
+              color: appGreyColor.withOpacity(0.4),
               offset: Offset(0, 10),
               blurRadius: 9),
         ],
