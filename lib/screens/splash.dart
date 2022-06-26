@@ -25,27 +25,29 @@ class _SplashState extends State<Splash> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          height: 373,
-        ),
-        Center(
-            child: Container(
-          width: 129,
-          height: 134,
-          child:
-              Image(image: AssetImage(AssetConstants.splashScreenBackground)),
-        )),
-        Spacer(),
-        Padding(
-          padding: const EdgeInsets.only(bottom: 61),
-          child: Text(
-            "Powered By Tech Idara",
-            style: heading4,
+    return Scaffold(
+      body: Column(
+        children: [
+          SizedBox(
+            height: 373,
           ),
-        )
-      ],
+          Center(
+              child: Container(
+            width: 129,
+            height: 134,
+            child:
+                Image(image: AssetImage(AssetConstants.splashScreenBackground)),
+          )),
+          Spacer(),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 61),
+            child: Text(
+              "Powered By Tech Idara",
+              style: heading4,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
